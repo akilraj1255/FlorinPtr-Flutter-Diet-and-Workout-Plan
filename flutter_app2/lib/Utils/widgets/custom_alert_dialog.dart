@@ -1,0 +1,70 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+import 'package:flutter_app/Utils/widgets/custom_flat_button.dart';
+
+class CustomAlertDialog extends StatelessWidget {
+  final String title;
+  final String content;
+  final VoidCallback onPressed;
+
+  CustomAlertDialog({this.title, this.content, this.onPressed});
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+          contentPadding: EdgeInsets.all(10.0),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(30.0))),
+          title: Text(
+            title,
+            softWrap: true,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.black,
+              decoration: TextDecoration.none,
+              fontSize: 18,
+              fontWeight: FontWeight.w700,
+              fontFamily: "OpenSans",
+            ),
+          ),
+          content: Container(
+            height: 150,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  content,
+                  softWrap: true,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black87,
+                    decoration: TextDecoration.none,
+                    fontSize: 17,
+                    fontWeight: FontWeight.w400,
+                    fontFamily: "OpenSans",
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 15.0),
+                  child: CustomFlatButton(
+                    title: "OK",
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                    textColor: Colors.white,
+                    onPressed: () {
+                      onPressed();
+                      Navigator.of(context).pop();
+                    },
+                    color: Colors.green,
+                    splashColor: Colors.black12,
+                    borderColor: Colors.black12,
+                    borderWidth: 2,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+  }
+}

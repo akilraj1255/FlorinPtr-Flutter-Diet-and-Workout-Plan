@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "148403114008",
+    "firebase_url": "https://dietandworkoutplan.firebaseio.com",
+    "project_id": "dietandworkoutplan",
+    "storage_bucket": "dietandworkoutplan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148403114008:android:3e3a8a6047cc41a469f36d",
+        "android_client_info": {
+          "package_name": "com.diet_and_workout_plan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148403114008-jk9kvvi7bqqsct9nbgokcnunkedht1ao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR3D6vZU56BzVR3cccERrTxUwahWB2TqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148403114008-jk9kvvi7bqqsct9nbgokcnunkedht1ao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
