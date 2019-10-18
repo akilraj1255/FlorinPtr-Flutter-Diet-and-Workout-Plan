@@ -57,7 +57,7 @@ class MySmallRaisedButton extends StatelessWidget {
           style: TextStyle(fontSize: 15.0, color: Colors.black)
           ),
         ),
-        Icon(myIcon, size: 27.0,color: Colors.white,)
+        Icon(myIcon, size: 27.0,color: Colors.black54,)
       ],
     ),
     ),

@@ -8,20 +8,20 @@ enum authProblems { UserNotFound, PasswordNotValid, NetworkError, UnknownError }
 
 class Auth {
   static Future<String> signIn(String email, String password) async {
-    FirebaseUser user = await FirebaseAuth.instance
-        .signInWithEmailAndPassword(email: email, password: password);
+    FirebaseUser user = (await FirebaseAuth.instance
+        .signInWithEmailAndPassword(email: email, password: password)) as FirebaseUser;
     return user.uid;
   }
 
-  static Future<String> signInWithFacebok(String accessToken) async {
-    FirebaseUser user = await FirebaseAuth.instance
-        .signInWithFacebook(accessToken: accessToken);
+  static Future<String> signInWithFacebok(AuthCredential credential) async {
+    FirebaseUser user = (await FirebaseAuth.instance
+        .signInWithCredential(credential)) as FirebaseUser;
     return user.uid;
   }
 
   static Future<String> signUp(String email, String password) async {
-    FirebaseUser user = await FirebaseAuth.instance
-        .createUserWithEmailAndPassword(email: email, password: password);
+    FirebaseUser user = (await FirebaseAuth.instance
+        .createUserWithEmailAndPassword(email: email, password: password)) as FirebaseUser;
     return user.uid;
   }
 

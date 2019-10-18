@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:ui' as prefix0;
+import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 import 'package:http/http.dart' show get;
 import 'package:path/path.dart' as Path;
 import 'package:firebase_auth/firebase_auth.dart';
@@ -12,7 +13,6 @@ import 'package:flutter_app/Utils/validator.dart';
 import 'package:flutter_app/Utils/widgets/custom_alert_dialog.dart';
 import 'package:flutter_app/Utils/widgets/custom_text_field.dart';
 import 'package:flutter_app/activityes/set_user_data.dart';
-import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/foundation.dart';
 
@@ -185,11 +185,12 @@ class _LoginPageState extends State {
       SystemChannels.textInput.invokeMethod('TextInput.hide');
       _changeBlackVisible();
       FacebookLogin facebookLogin = new FacebookLogin();
-      FacebookLoginResult result = await facebookLogin
-          .logInWithReadPermissions(['email', 'public_profile']);
+      FacebookLoginResult result = await facebookLogin.logIn(['email', 'public_profile']);
       switch (result.status) {
         case FacebookLoginStatus.loggedIn:
-          Auth.signInWithFacebok(result.accessToken.token).then((uid) {
+          AuthCredential credential= FacebookAuthProvider.getCredential(
+              accessToken: result.accessToken.token);
+          Auth.signInWithFacebok(credential).then((uid) {
             _setUserProfilePicture(result.accessToken.userId); // set picture download link
 
             Auth.getCurrentFirebaseUser().then((firebaseUser) {

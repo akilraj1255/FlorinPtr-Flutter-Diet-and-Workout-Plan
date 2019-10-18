@@ -16,27 +16,35 @@ version: 1.0.0+1
 environment:
   sdk: ">=2.1.0 <3.0.0"
 
+
+androidX: true
+
 dependencies:
   flutter:
     sdk: flutter
   shared_preferences: ^0.5.3+4
-  firebase_auth: ^0.6.6
-  cloud_firestore: any
-  path_provider: ^0.4.1
+  path_provider: ^1.1.0
   cached_network_image: any
   transformer_page_view: ^0.1.6
   flutter_page_indicator: ^0.0.3
   flutter_swiper: ^1.1.6
   material_design_icons_flutter: ^3.2.4495
-  firebase_database: any
+  firebase_database: ^3.0.7
+  firebase_core: ^0.4.0+9
+  firebase_auth: ^0.14.0+5
+  cloud_firestore: ^0.12.9+5
   back_button_interceptor: any
-  fluttertoast: 2.2.11
+  fluttertoast: ^3.1.3
+  url_launcher: ^5.2.0
+  esys_flutter_share: ^1.0.2
+  flutter_facebook_login: ^3.0.0
+
+  #share: ^0.6.2+3
   #simple_share: ^0.0.1+4
-  #file_picker: ^1.4.2
+  file_picker: ^1.4.2
 
   # flutter_auth_buttons: ^0.5.0
-  flutter_facebook_login: ^1.1.1
-#  firebase_core: ^0.4.0+9
+  #  firebase_core: ^0.4.0+9
 
 
   # The following adds the Cupertino Icons font to your application.

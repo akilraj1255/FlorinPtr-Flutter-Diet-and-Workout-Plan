@@ -1,3 +1,4 @@
+import 'package:flutter/services.dart';
 import 'package:flutter_app/activityes/mainScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -6,24 +7,25 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'activityes/myWelcome.dart';
 
 
-void main()
+void main() {
 
-{
   WidgetsFlutterBinding.ensureInitialized();
   nextAction().then((bool isP){
-    runApp(MyApp(isP));
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
+      .then((_) {
+    runApp(new MyApp(isP));
+  });
   });
 }
+
 
 Future <bool> nextAction () async {
 
   SharedPreferences prefs = await SharedPreferences.getInstance();
   String pName =  prefs.getString("nume" ?? null);
-
   if(pName != null){
     return true;
-  }
-  else {
+  } else {
     return false;
   }
 }

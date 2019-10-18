@@ -2,6 +2,7 @@ import 'dart:io';
 import 'dart:math';
 import 'dart:ui' as prefix0;
 
+import 'package:esys_flutter_share/esys_flutter_share.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -9,6 +10,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_app/Themes/myColors.dart';
 import 'package:flutter_app/Utils/Person.dart';
 import 'package:flutter_app/Utils/app_localizations.dart';
+import 'package:flutter_app/Utils/static_values.dart';
 import 'package:flutter_app/Utils/widgets/myRaisedButton.dart';
 import 'package:back_button_interceptor/back_button_interceptor.dart';
 import 'package:flutter_app/Utils/widgets/my_small_rised_button.dart';
@@ -16,6 +18,8 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'details_screen.dart';
 import 'goPremium.dart';
 
 class MainScreen extends StatefulWidget {
@@ -38,6 +42,7 @@ class _MainSCreenState extends State<MainScreen> {
   String secondRandomTipInt;
   bool isInitializated = false;
   bool isPremiumVersion = false;
+  bool _hideGoPremium = false;
 
 
   @override
@@ -96,8 +101,10 @@ class _MainSCreenState extends State<MainScreen> {
     person.setEmail(prefs.getString("email"));
     person.setBmr(prefs.getInt("bmr"));
 
-      if (true) {
-        // todo check if is buyed then hide go premium btn
+    StaticValues.person = person;
+
+      if (StaticValues.isPremiumVersion == true) {
+        _hideGoPremium = true;
       }
       String orentation = "";
 
@@ -160,7 +167,7 @@ class _MainSCreenState extends State<MainScreen> {
                           image: AssetImage("assets/images/ganteragreen.png")) ,
                     ) ,
                     MySmallRaisedButton(
-                      myOnPressed: () {},
+                      myOnPressed: () {_launchURL();},
                       mytext: "About" ,
                       myGradient: MyTheme.myVerticalGradient ,
                       myIcon: MdiIcons.informationOutline ,
@@ -169,7 +176,7 @@ class _MainSCreenState extends State<MainScreen> {
                       width: 5.0 ,
                     ) ,
                     MySmallRaisedButton(
-                      myOnPressed: () {} ,
+                      myOnPressed: (){ _shareDownloadLink(); } ,
                       mytext: AppLocalizations.of(context).translate("share_") ,
                       myGradient: MyTheme.myVerticalGradient ,
                       myIcon: MdiIcons.share ,
@@ -178,7 +185,10 @@ class _MainSCreenState extends State<MainScreen> {
                 ) ,
               ) ,
               SizedBox(height: 20.0) ,
+
+
               MyRaisedButton(
+                isInvisible: _hideGoPremium,
                 myOnPressed: () {
                   Navigator.of(context)
                       .push(new MaterialPageRoute(builder: (context) {
@@ -303,10 +313,16 @@ class _MainSCreenState extends State<MainScreen> {
                                       height: 10.0 ,
                                     ) ,
                                     MyRaisedButton(
+                                      isInvisible: false,
                                       mytext: "Ideas:" ,
                                       //       mytext: AppLocalizations.of(context).translate("idei"),
                                       myGradient: MyTheme.myLinearGradient ,
-                                      myOnPressed: () {} ,
+                                      myOnPressed: () {
+                                        Navigator.of(context).push(
+                                            new MaterialPageRoute(builder: (context) {
+                                              return new DetailsScreen();
+                                            }));
+                                      } ,
                                       myIcon: MdiIcons.lightbulbOn ,
                                     ) ,
                                   ] ,
@@ -438,6 +454,31 @@ class _MainSCreenState extends State<MainScreen> {
     //todo
   }
 
+  _shareDownloadLink() async {
+
+    // todo check package docs for ios error
+    // todo set link for each store
+
+    String appname = AppLocalizations.of(context).translate("app_name");
+
+    if(Platform.isIOS){
+
+    }else{
+
+       Share.text(appname + ' download Link: ',
+           'https://www.diet-and-workout-plan.com/', "text.plain");
+    }
+  }
+
+  _launchURL() async {
+    const url = 'https://www.diet-and-workout-plan.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
 
 
   void SetTips() {
@@ -455,4 +496,5 @@ class _MainSCreenState extends State<MainScreen> {
 
   }
 }
+
 

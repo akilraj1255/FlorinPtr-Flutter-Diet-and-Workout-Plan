@@ -13,6 +13,7 @@ class MyRaisedButton extends StatelessWidget {
   final IconData myIcon;
   final Gradient myGradient;
   final VoidCallback myOnPressed;
+  final bool isInvisible;
 
   MyRaisedButton(
       {this.mytext,
@@ -26,39 +27,45 @@ class MyRaisedButton extends StatelessWidget {
       this.borderWidth,
       this.myIcon,
       this.myGradient,
-      this.myOnPressed});
+      this.myOnPressed,
+      this.isInvisible});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 45.0,
-      decoration: BoxDecoration(
-          gradient: myGradient,
-          borderRadius: BorderRadius.circular(20.0),
-      ),
-      child: RaisedButton(
-        onPressed: myOnPressed,
-        color: Colors.transparent,
-        elevation: 0.0,
-      //  elevation: 35.0,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                    mytext,
-                    style: TextStyle(fontSize: 17.0)),
-                Padding(
-                  padding: const EdgeInsets.only(left: 12.0),
-                  child: Icon(
-                    myIcon,
-                    size: 40.0,
-                    color: Colors.yellow,
-                  ),
-                )
-              ],
-            ),
-          ),
 
-    );
+    if(isInvisible){
+      return Container();
+    }else {
+      return Container(
+        height: 45.0 ,
+        decoration: BoxDecoration(
+          gradient: myGradient ,
+          borderRadius: BorderRadius.circular(20.0) ,
+        ) ,
+        child: RaisedButton(
+          onPressed: myOnPressed ,
+          color: Colors.transparent ,
+          elevation: 0.0 ,
+          //  elevation: 35.0,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center ,
+            children: <Widget>[
+              Text(
+                  mytext ,
+                  style: TextStyle(fontSize: 17.0)) ,
+              Padding(
+                padding: const EdgeInsets.only(left: 12.0) ,
+                child: Icon(
+                  myIcon ,
+                  size: 40.0 ,
+                  color: Colors.yellow ,
+                ) ,
+              )
+            ] ,
+          ) ,
+        ) ,
+
+      );
+    }
   }
 }
