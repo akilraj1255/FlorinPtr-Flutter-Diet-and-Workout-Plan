@@ -36,6 +36,8 @@ class _LoginPageState extends State {
 
   Person person = new Person();
 
+  bool isSiignedIn = false;
+
 
   @override
   void initState() {
@@ -190,6 +192,7 @@ class _LoginPageState extends State {
         case FacebookLoginStatus.loggedIn:
           AuthCredential credential= FacebookAuthProvider.getCredential(
               accessToken: result.accessToken.token);
+
           Auth.signInWithFacebok(credential).then((uid) {
             _setUserProfilePicture(result.accessToken.userId); // set picture download link
 
@@ -269,8 +272,6 @@ class _LoginPageState extends State {
     String email,
     String password,
     BuildContext context}) async {
-
-    bool isSiignedIn = false;
 
     if (Validator.validateEmail(email) &&
         Validator.validatePassword(password)) {
