@@ -1,6 +1,4 @@
 
-
-
  class Mancare {
 
    int id;
@@ -18,9 +16,10 @@
    int grasimi;
    String tags;
 
-
    Mancare(int id, bool isLocked, bool isFavorite,
-       String nume, String descriere, String cantitati, String poza, int categoria, int calorii, int proteina, int carbo, int fibers, int grasimi, String tags) {
+       String nume, String descriere, String cantitati, String poza, int categoria,
+       int calorii, int proteina, int carbo, int fibers, int grasimi, String tags) {
+
     this.id = id;
     this.isLocked = isLocked;
     this.isFavorite = isFavorite;

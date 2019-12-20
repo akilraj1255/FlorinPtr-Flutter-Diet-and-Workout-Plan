@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter_app/Themes/myColors.dart';
 import 'package:flutter_app/Utils/widgets/custom_flat_button.dart';
 
 class CustomAlertDialog extends StatelessWidget {
@@ -56,7 +57,7 @@ class CustomAlertDialog extends StatelessWidget {
                       onPressed();
                       Navigator.of(context).pop();
                     },
-                    color: Colors.green,
+                    color: MyTheme.themeColor,
                     splashColor: Colors.black12,
                     borderColor: Colors.black12,
                     borderWidth: 2,

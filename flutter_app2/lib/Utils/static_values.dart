@@ -18,7 +18,26 @@ class StaticValues{
    static int percentagePranz = 35;
    static int percentageG2 = 8;
    static int percentageCina = 24;
-   static bool isBasketCleared;
+   static int breakfastcurrentIndex = 0;
+   static int dinnerCurrentIndex = 0;
+   static int secondTastingCurrentIndex = 0;
+   static int lunchCurrentIndex = 0;
+   static int firstTastingCurrentIndex = 0;
+
+  static bool isBasketCleared;
+  static bool uploadPhoto = false;
+
+  static int exerciseSpinnerIndex = 0;
+
+  static int exerciseSwiperIndex1 = 0;
+  static int exerciseSwiperIndex2 = 0;
+  static int exerciseSwiperIndex3 = 0;
+  static int exerciseSwiperIndex4 = 0;
+  static int exerciseSwiperIndex5 = 0;
+
+  static bool isAddGroceryOpen = true;
+
+  static List<int> consumedFoodsToday = new List();
 
 }
 

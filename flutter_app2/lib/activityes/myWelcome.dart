@@ -1,4 +1,5 @@
 
+import 'package:flutter_app/Themes/myColors.dart';
 import 'package:flutter_app/Utils/app_localizations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,7 @@ class MyWelcome extends StatelessWidget {
                 textColor: Colors.white,
                 shape: RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(30.0)),
-                color: Colors.green ,
+                color: MyTheme.themeColor,
                 onPressed: () {
                   Navigator.of(context).push(
                       new MaterialPageRoute(builder: (context) {
@@ -42,7 +43,6 @@ class MyWelcome extends StatelessWidget {
                       })
                   );
                 },
-
                 child: Text(
                     "Start" ,
                     style: TextStyle(fontSize: 20 , color: Colors.white)) ,

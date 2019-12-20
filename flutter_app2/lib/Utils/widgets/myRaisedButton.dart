@@ -57,7 +57,7 @@ class MyRaisedButton extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 12.0) ,
                 child: Icon(
                   myIcon ,
-                  size: 40.0 ,
+                  size: 35.0 ,
                   color: Colors.yellow ,
                 ) ,
               )

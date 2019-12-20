@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:ui' as prefix0;
+import 'package:flutter_app/Themes/myColors.dart';
 import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 import 'package:http/http.dart' show get;
 import 'package:path/path.dart' as Path;
@@ -157,7 +158,7 @@ class _LoginPageState extends State {
                         context: context
                     );
                   },
-                  color: Colors.green,
+                    color: MyTheme.themeColor,
                   elevation: 15.0,
                   textColor: Colors.white,
                   shape: RoundedRectangleBorder(
@@ -183,7 +184,6 @@ class _LoginPageState extends State {
   void _loginWithFb(BuildContext context) async{
 
     try {
-
       SystemChannels.textInput.invokeMethod('TextInput.hide');
       _changeBlackVisible();
       FacebookLogin facebookLogin = new FacebookLogin();
@@ -193,24 +193,21 @@ class _LoginPageState extends State {
           AuthCredential credential= FacebookAuthProvider.getCredential(
               accessToken: result.accessToken.token);
 
-          Auth.signInWithFacebok(credential).then((uid) {
-            _setUserProfilePicture(result.accessToken.userId); // set picture download link
-
-            Auth.getCurrentFirebaseUser().then((firebaseUser) {
+          FirebaseUser firebaseUser = (
+              await FirebaseAuth.instance.signInWithCredential(credential)
+          ).user;
+          _setUserProfilePicture(result.accessToken.userId);
               person.setName(firebaseUser.displayName);
               person.setId(firebaseUser.uid);
               person.setEmail(firebaseUser.email ?? '');
-            });
-         //     Auth.addUser(person);
               Navigator.of(context).push(
                   new MaterialPageRoute(builder: (context) {
                     return new SetUserData(person);
                   })
               );
-            });
           break;
-        case FacebookLoginStatus.cancelledByUser:
-        case FacebookLoginStatus.error:
+          case FacebookLoginStatus.cancelledByUser:
+          case FacebookLoginStatus.error:
           _changeBlackVisible();
       }
     } catch (e) {
@@ -244,16 +241,17 @@ class _LoginPageState extends State {
     if (Validator.validateEmail(email) &&
         Validator.validatePassword(password)) {
       try {
+
         Person user = new Person();
         user.setEmail(email);
         SystemChannels.textInput.invokeMethod('TextInput.hide');
         _changeBlackVisible();
         await Auth.signIn(email, password)
-            .then((uid) => Navigator.of(context).push(
-            new MaterialPageRoute(builder: (context) {
-              return new SetUserData(user);
-            })
-        ));
+            .then((uid) => Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => SetUserData(user)),
+              (Route<dynamic> route) => false,)
+        );
       } catch (e) {
         print("Error in email sign in: $e");
         String exception = Auth.getExceptionText(e);
@@ -280,11 +278,10 @@ class _LoginPageState extends State {
         _changeBlackVisible();
         await Auth.signUp(email , password).then((uID) {
 
-          isSiignedIn = true;
           person.setId(uID);
           person.setEmail(email);
-       //   person.setPassword(password);
-      //    Auth.addUser(person);
+          isSiignedIn = true;
+
           Navigator.of(context).push(
               new MaterialPageRoute(builder: (context) {
                 return new SetUserData(person);
@@ -293,18 +290,11 @@ class _LoginPageState extends State {
         });
       } catch (e) {
         print("Error in sign up: $e");
-//        String exception = Auth.getExceptionText(e);
-//    _showErrorAlert(
-//    title: "Signup failed",
-//    content: exception,
-//    onPressed: _changeBlackVisible,
-//    );
 
-      }
-
-      if(!isSiignedIn) {
-        _signinWithEmailandPass(
-            password: password , email: email , context: context);
+        if (!isSiignedIn) {
+          _signinWithEmailandPass(
+              password: password , email: email , context: context);
+        }
       }
     }
   }

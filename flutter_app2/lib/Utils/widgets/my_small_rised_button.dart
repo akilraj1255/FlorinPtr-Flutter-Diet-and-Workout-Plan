@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class MySmallRaisedButton extends StatelessWidget {
   final String mytext;
+  bool isEnabled = true;
   final Color textColor;
   final double fontSize;
   final FontWeight fontWeight;
@@ -10,7 +11,7 @@ class MySmallRaisedButton extends StatelessWidget {
   final Color splashColor;
   final Color borderColor;
   final double borderWidth;
-  final IconData myIcon;
+  final Icon myIcon;
   final Gradient myGradient;
   final VoidCallback myOnPressed;
 
@@ -31,36 +32,41 @@ class MySmallRaisedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
         return
-    RaisedButton(
-    onPressed: myOnPressed,
-      elevation: 5.0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15.0),
+    Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        RaisedButton(
+        onPressed: myOnPressed,
+          elevation: 5.0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15.0),
 //        side: BorderSide(
 //      //    color: borderColor,
 //        //  width: borderWidth,
 //        ),
-      ),
-    padding: const EdgeInsets.all(0.0),
-    child: Container(
-    decoration:  BoxDecoration(
-      borderRadius: BorderRadius.circular(15.0),
-    gradient: myGradient,
-    ),
-    padding: const EdgeInsets.all(5.0),
-    child: Row(
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical:5.0, horizontal: 10.0),
-          child: Text(
-          mytext,
-          style: TextStyle(fontSize: 15.0, color: Colors.black)
           ),
+        padding: const EdgeInsets.all(0.0),
+        child: Container(
+        decoration:  BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+        gradient: myGradient,
         ),
-        Icon(myIcon, size: 27.0,color: Colors.black54,)
+        padding: const EdgeInsets.symmetric(horizontal:10.0, vertical: 5),
+        child: Row(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical:5.0, horizontal: 10.0),
+              child: Text(
+              mytext,
+              style: TextStyle(fontSize: 15.0, color: Colors.black)
+              ),
+            ),
+            myIcon,
+          ],
+        ),
+        ),
+        ),
       ],
-    ),
-    ),
     );
   }
 }

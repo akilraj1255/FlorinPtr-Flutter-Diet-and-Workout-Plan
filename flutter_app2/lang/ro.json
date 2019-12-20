@@ -1,735 +1,347 @@
-
 {
-
-  "app_name": "Plan Dieta si Antrenament"
-,
-  "messageText": "Aplicatia de fata este bazata pe ecuatia lui Harris-Benedict. \n Desi ecuatia Harris-Benedict este folosita de multi ani (aproape 100 ani, mai precis, de la data la care Harris JA si Benedict FG au publicat studiul lor intitulat \n Un studiu biometric al metabsolismului bazal la om\n in 1919) de nutritionisti si medici pentru a estima rata metabolica bazala, recent au fost publicate studii care arata ca, in cazul persoanelor supraponderale, aceasta ecuatie tinde sa supraestimeze consumul energetic in repaus cu cel putin 5%. Intrucat calculatorul acesta este anticipat sa fie folosit preponderent de persoane care au exces de greutate, am decis sa folosim o alta formula, cunoscuta sub numele de ecuatia lui Mifflin, publicata in nr februarie 1990 al revistei American Journal of Clinical Nutrition, sub titlul O noua ecuatie predictiva pentru consumul energetic in repaus al persoanelor sanatoase. Ecuatia Mifflin:\n Pentru barbati: RMB (CER) = 5 + 10(greutatea) + 6.25 (inaltimea) - 5 (varsta) \n Pentru femei: RMB (CER) = -161 + 10 (greutatea) + 6.25 (inaltimea) - 5 (varsta) Rezultatul se masoara in kcal/zi. \n Pentru masurarea necesarului zilnic de calorii am folosit o formula care ia in consideratieasa-numitul factor de activitate fizica. Acest factor este de fapt un numar obtinut pe baza nivelului de activitate fizica pe care il selectatezi. \n Prin multiplicarea ratei metabolice bazale cu factorul de activitate se obtine necesarul caloric zilnic.\n"
-,
-
-  "swipeCheckBoxTxt": "Nu mai arata"
-,
-  "calculeaza": "Calculeaza",
-  "antrenamente_saptamanale": "Antrenamente saptamanale?",
-
-  "cat_de_activa_este_viata_dvs": "Cat de activa este viata dvs?"
-,
-
-  "foarte_activa": "foarte activa"
-,
-
-  "destul_de_activa": "destul de activa"
-,
-  "nu_prea_activa": "nu prea activa",
-  "inapoi": "Inapoi",
-
-  "total": "Total:"
-,
-
-  "mic_dejun": "Mic Dejun:"
-,
-
-  "prima_gustare": "Prima Gustare:"
-,
-  "pranz": "Pranz:",
-  "a_doua_gustare": "A doua Gustare:",
-
-  "cina": "Cina:"
-,
-
-  "descriere": "Descriere…"
-,
-
-  "kg": "kg"
-,
-  "greutatea_pe_care_o_vreau": "Greutatea dorita:",
-  "nivelul_de_activitate": "",
-
-  "greutatea_actuala": "Greutatea actuala:"
-,
-
-  "inaltime": "Inaltime:"
-,
-
-  "sunt": "Sunt"
-,
-  "femeie": "Femeie",
-  "barbat": "Barbat",
-
-  "am": "Am"
-,
-
-  "ani": "ani."
-,
-
-  "inaltime_si_greutate": ""
-,
-  "numele": "Numele:",
-  "bine_ati_venit": "Bine ati venit",
-
-  "despre": ""
-,
-
-  "detalii": "Detalii…"
-,
-
-  "idei": ""
-,
-  "introduceti_varsta": "Introduceti varsta dvs! Varsta trebuie sa fie mai mare decat 9!",
-  "introduceti_numele": "Introduceti numele dvs!",
-
-  "introduceti_greutatea_inaltimea": "Introduceti greutatea si inaltimea dvs!"
-,
-
-  "nav_dieta": "Alimentatie"
-,
-
-  "info_your_age": "Varsta:"
-,
-  "info_inalt": "Inaltime",
-  "info_greutatea": "Greutatea actuala:",
-
-  "info_greutatea_dorita": "Greutatea tinta:"
-,
-
-  "info_nivelActivitate": "Nivelul de activitate:"
-,
-
-  "info_antrenamente": "Antrenamente saptamanale:"
-,
-  "info_edit_btn": "Editeaza",
-  "info_years_tail": "ani",
-
-  "info_saveBtnText": "Salveaza"
-,
-
-  "obiectiv_text": "sa scazi in greutate si sa te tonifiezi, pentru asta este recomandat sa te plasezi in deficit caloric adica sa mananci mai putin decat obiectivul caloric stabilit iar daca mergi la sala este bine sa faci cel putin 20 de minute de alergare la inceputul fiecarui antrenament cu greutati."
-,
-
-  "nav_exercise": "Exercitii"
-,
-  "obiectiv_title": "Obiectivul tau este  ",
-  "obiectiv_text_masa": "sa pui masa musculara,, pentru asta este nevoie sa te antrenezi cu greutati si sa mananci mai mult decat necesarul caloric stabilit. ",
-
-  "what_do_you_want_to_work_today": "ce ai vrea sa lucrezi astazi?"
-,
-
-  "dialog_title": "Se calculeaza cantitatile...",
-  "diialog_message": "Va rugam asteptati...",
-  "strenghtTraining": "Forta"
-,
-
-  "app_exit_toast": "Apasati inapoi inca o data pentru a inchide aplicatia"
-,
-
-  "e_chest": "Piept"
-,
-
-  "e_ChestAndBiceps": "",
-  "e_chestandtriceps": "",
-  "e_back": "Spate"
-,
-
-  "e_backandbiceps": ""
-,
-
-  "e_backandtriceps": ""
-,
-
-  "e_legs": "Picioare",
-  "e_legsandabs": "",
-  "e_arms": "Brate"
-,
-
-  "e_shoulders": "Umeri"
-,
-
-  "e_upperbody": "Partea superioara"
-,
-
-  "e_lowerbody": "Partea inferioara",
-  "e_fullbody": "Tot corpul",
-  "chiken_eggs": "Oua de gaina"
-,
-
-  "whole_wheat": "Paine integrala"
-,
-
-  "salata_verdeturi": "Salata de verdeturi"
-,
-
-  "omleta_verdeturi": "Omleta cu verdeturi si paine integrala",
-  "oua_fierte": "Oua de gaina fierte",
-  "avocado": "Avocado"
-,
-
-  "oua_avocado_oaine": "Oua fierte cu avocado si paine integrala"
-,
-
-  "lapte_cereale": "Lapte cu cereale."
-,
-
-  "lapte_cereale_descriere": "2/3 Lapte 1,5 grasime si 1/3 cereale la alegere.",
-  "iaurt_2": "Iaurt 2.5 grasime",
-  "fulgi_ovaz": "Fulgi de Ovaz"
-,
-
-  "seminte": "Seminte"
-,
-
-  "iaurt_ovaz_seminte": "Iaurt cu ovaz, seminte si fructe"
-,
-
-  "fructe_alegere": "Fructe la alegere",
-  "fructe_poate_fi": "Poate fi mar, prune, fructe de padure, portocale, cirese, capsuni etc.",
-  "cioco_neagra": "Ciocolata neagra"
-,
-
-  "cioco_neagra_cacao_cantitate": "Ciocolata neagra mai mult de 75 la suta cacao"
-,
-
-  "seminte_dovleac": "Seminte de dovleac"
-,
-
-  "seminte_dovleac_descriere": "Semintele de dovleac sunt bogate in proteine si sunt o sursa excelenta de grasimi bune omega 3 si omega 6.",
-  "mamaliga": "Mamaliga",
-  "branza": "Branza"
-,
-
-  "mamaligaBranza": "Mamaliga cu branza"
-,
-
-  "cantitati_mancare": "Cantitati:"
-,
-
-  "proteine_": "Proteine",
-  "carbo_": "Carbohidrati",
-  "fats_": "Grasimi"
-,
-
-  "orez_": "Orez"
-,
-
-  "piept_de_pui_prajit": "Piept de pui prajit"
-,
-
-  "salata_": "Salata",
-  "piept_de_pui_orez_descriere": "Orez cu piept de pui si salata",
-  "cartofi_fierti": "Cartofi fierti"
-,
-
-  "_friptura": "Carne pentru friptura"
-,
-
-  "cartofi_fiert_pork_descriere": "Friptura cu cartofi fierti si salata"
-,
-
-  "carne_pui": "Carne de pui",
-  "ciuperci": "Ciuperci",
-  "carne_pui_orez_ciuperci": "Carne de pui cu orez, ciuperci si salata"
-,
-
-  "carne_vita": "Carne de vita"
-,
-
-  "vita_ciuperci_avocado": "Tocanita de vita cu ciuperci, avocado si salata"
-,
-
-  "green_beans": "Fasole verde",
-  "nuci_alune": "Nuci/alune",
-  "nuci_alune_description": "Pot fi nuci, alune, arahide etc."
-,
-
-  "iaurt_fructe": "Iaurt 2% grasime, cu mici cantitati de fructe"
-,
-
-  "iaurt": "Iaurt"
-,
-
-  "lapte_descriere": "Lapte proaspat cu 1,5% grasime",
-  "dovleac_copt": "Dovleac copt",
-  "dovleac_descrieree": "Dovleacul la cuptor are foarte putine calorii deci este perfect pentru cei care vor sa slabeasca."
-,
-
-  "paste_penne": "Paste penne"
-,
-
-  "piept_pui": "Piept de pui"
-,
-
-  "sos_rosii": "Sos de rosii",
-  "paste_piept_pui": "Paste cu piept de pui",
-  "carne_peste": "Carne de peste"
-,
-
-  "legume_tigaie": "Legume la tigaie"
-,
-
-  "peste_legume": "Peste cu legume"
-,
-
-  "cartofi_copti": "Cartofi copti",
-  "pui_ciuperci_fasoleverde": "Pui cu cartofi copti, ciuperci si fasole verde",
-  "file_ton": "File de ton"
-,
-
-  "branza_slaba": "Branza slaba"
-,
-
-  "legume_alegerea": "Legume la alegere"
-,
-
-  "crutoane_paine_integrala": "Crutoane sau paine integrala",
-  "salata_ton": "Salata de ton",
-  "legume_carne_pui_masline": "Salata de legume cu carne de pui masline"
-,
-
-  "lapte": "Lapte"
-,
-
-  "masline": "Masline"
-,
-
-  "domnule_": "Domnule",
-  "doamna_": "Doamna",
-  "domnisoara_": "Domnisoara"
-,
-
-  "antrenament_doua_zile": ", in acest caz este recomandat de exemplu in prima zi partea superioara iar in a doua partea inferioara sau alt model de antrenament care sa cuprinda tot corpul in cele doua zile. de asemenea este recomandata o perioada de trei zile intre antrenamente pentru ca alternanta lucru/pauza sa fie echilibrata."
-,
-
-  "antrnamente_setate": "      Antrenamentele tale saptamanale sunt setate la ",
-  "custom_tips": "",
-  "sets": "Seturi:",
-  "reps": "Repetari:",
-
-  "exercise_nr": "Exercitiu nr."
-,
-
-  "category": "Categoria:"
-,
-
-  "legs": "Picioare"
-,
-  "back": "Spate",
-  "chest": "Piept",
-
-  "umeri": "Umeri"
-,
-
-  "abs": "Abdomene"
-,
-
-  "antrenament_trei_zile": ""
-,
-  "antrenament_patru_zile": "",
-  "diet_matters": " Nu uita alimentatia conteaza 70% iar antrenamentul 30%. Stai cu ochii pe cantarul de bucatarie si pe obiectivul tau.",
-  "litri_": " litri"
-,
-
-  "last_tip": "  Si un ultim pont, la greutatea ta  ar trebui sa bei mai mult de ",
-  "of_water": " de apa in fiecare zi.",
-  "buy_": "Incearca premium",
-  "purchase_our_premium_version_text": "Deblocheaza versiunea full, ai acces la toate variantele de mancare si toate exercitiile acum cu peste 30% discount!",
-  "purchase_": "Achizitioneaza!"
-,
-
-  "ups_exercise_locked": "Exercitiu blocat..."
-,
-
-  "food_locked": "Mancare blocata..."
-,
-
-  "del_title": "Sigur?",
-  "del_question": "Vrei sa stergi aceasta intrare?",
-  "yes_": "Da"
-,
-
-  "no_": "Nu"
-,
-
-  "ai_nevoiede_mai_putin": ", ai nevoie de mai putin de"
-,
-
-  "_calorii_zilnic": "calorii zilnic pentru a-ti atinge obiectivul.",
-  "ai_nevoiede_peste": ", ai nevoie de peste",
-  "ai_nevoiepentrua_mentine": ", ai nevoie de"
-,
-
-  "pentrua_mentine_greutatea": "calorii zilnic pentru a-ti mentine greutatea actuala."
-,
-
-  "tips_curiosities": ""
-,
-
-  "tc1": "Grasimile Omega-3 sunt cruciale si majoritatea oamenilor nu obtin cantitatea necesara.",
-  "tc2": "Suplimentele alimentare nu vor putea niciodata sa inlocuiasca mancarea adevarata.",
-  "tc3": "Mancand mai multe legume verzi iti vei imbunatati starea de sanatate."
-,
-
-  "tc4": "Carbohidratii rafinati sunt nocivi pentru sanatatea ta."
-,
-
-  "tc5": "\"Dietele\" nu functioneaza - este necesara schimbarea stilului de viata!"
-,
-
-  "tc6": "Ouale sunt una dintre cele mai sanatoase mancaruri pe care le poti manca.",
-  "tc7": "Adaugand doar 2 antrenamente cu greutati pe saptamana poti reduce grasimea corporala cu pana la 7%.",
-  "tc8": "Bauturile care contin zahar sunt principala cauza de ingrasare in alimentatia moderna."
-,
-
-  "tc9": "Niciodata sa nu ai incredere in afirmatiile despre sanatate de pe ambalaj."
-,
-
-  "tc10": "Studiile arata ca nucile te pot ajuta sa pierzi in greutate, de asemenea ajuta in lupta cu diabetul si bolile de inima."
-,
-
-  "tc11": "Cafeaua este bogata in antioxidanti iar studiile arata ca cei care consuma cafea traiesc mai mult si au un risc mai scazut de diabet, Parkinson, Alzheimer si multe alte afectiuni.",
-  "tc12": "S-a aratat ca faptul de a consuma mai multe proteine conduce in mod automat la o restrictie calorica si la pierderea semnificativa in greutate.",
-  "tc13": "Oamenii consuma mai multe alimente procesate ca niciodata, iar tehnologiile folosite sunt mai elaborate si pot chiar creea dependenta pentru anumite mancaruri."
-,
-
-  "tc14": "Un somn bun poate fi la fel de important ca si nutritia sau antrenamentele daca nu mai important. Somnul precar poate conduce la rezistenta la insulina, poate sa modifice secretiile hormonale precum si sa afecteze negativ performantele fizice si intelectuale."
-,
-
-  "tc15": "Cel mai bun moment pentru a bea apa este cu jumatate de ora inaintea mesei. Un studiu a aratat ca o jumatate de litru de apa cu 30 de minute inaintea fiecarei mese poate conduce la o pierdere in greutate de pana la 44%."
-,
-
-  "tc16": "Uleiul de masline extravirgin este una dintre cele mai sanatoase grasimi de pe planeta. Contine grasimi monosaturate pritenoase cu inima si are puternice efecte antioxidante.",
-  "tc17": "Antrenamentele cu greutati sunt unul dintre cele mai bune lucruri pe care le poti face pentru a-ti intari corpul si a-i imbunatatii compozitia. De asemena accelereaza metabolismul si reduce rezistenta la insulina.",
-  "tc18": "Ar trebui sa faci un efort si sa incluzi in alimentatie mai multe ierburi si mirodenii. Multe dintre ele pot avea puternice efecte pozitive asupra sanatatii."
-,
-
-  "tc19": "Singura cale de a stii exact ce mananci si cate calorii consumi este sa folosesti o aplicatie care monitorizeaza continutul caloric al alimentelor, ca aceasta aplicatie."
-,
-
-  "tc20": "60% dintre cei care se antreneaza cu greutati obtin o medie de 7 ore sau mai mult de somn pe noapte."
-,
-
-  "tc21": "Antrenamentele cu greutati ridica nivelul de dopamina, norepinephrina si serotonina, devenind astfel un antidepresiv natural.",
-  "tc22": "Antrenamentele cu greutati cresc rata metabolica. O rata metabolica crescuta inseamna ca arzi mai multe calorii atunci cand corpul tau este in repaus.",
-  "tc23": "Un avocado are de doua ori mai mult potasiu decat o banana."
-,
-
-  "tc24": "Brocoli contine de doua ori mai multa vitamina C decat o portocala si aproape la fel de mult calciu ca si laptele integral, iar calciul este mai bine absorbit!"
-,
-
-  "tc25": "Semintele de dovleac sunt bogate in Zinc, care este bun pentru prostata si care intareste sistemul imunitar."
-,
-
-  "tc26": "Lamaile sunt considerate una dintre cele mai sanatoase mancaruri de pe pamant - o lamaie contine doza ta zilnica de vitamina C, curata ficatul si ajuta in procesul de slabire. Incearca sa adaugi sucul unei lamai intr-o cana cu apa calduta si bea asta in fiecare dimineata la trezire pentru a porni sistemul digestiv si a intari sistemul imunitar.",
-  "tc27": "Ciupercile sunt singura sursa naturala de provenienta non-animala pentru vitamina D.",
-  "prmium_purchased_success": "Versiunea premium achizitionata cu succes!"
-,
-
-  "click_on_name_bellow_for_detailas": "Apasa pe nume pentru detalii:"
-,
-
-  "gain_0_25_kg_per_week": "Castiga 0.25 kg pe saptamana"
-,
-
-  "gain_0_5_kg_per_week": "Castiga 0.5 kg pe saptamana",
-  "set_goal": "Seteaza obiectivul",
-  "weight_loss_healthy": "Pentru a pierde in greutate avem doua optiuni pentru tine in limitele unui proces de  slabire sanatos, te rog sa alegi cat de repede vrei sa-ti atingi obiectivul:"
-,
-
-  "gain_muscle_text": "Pentru a castiga in greutate te rog sa alegi cat de repede vrei sa-ti atingi obiectivul:"
-,
-
-  "kcal_day": "kcal/zi"
-,
-
-  "set_your_goal_btn1": "",
-  "chose_speed": "Alege viteza procesului!",
-  "lose_0_5_kg_per_week": "Slabeste 0.5 kg pe saptamana"
-,
-
-  "lose_1_kg_per_week": "Slabeste 1 kg pe saptamana"
-,
-
-  "please_select_activity": "Selectati nivelul de activitate si antrenamentele saptamanale!"
-,
-
-  "ambitious_target": "Acesta este un obiectiv destul de ambitios!",
-  "note_update": "Nota! Va fi nevoie sa actualizezi greutatea din cand in cand pentru a recalcula necesarul caloric zilnic.!",
-  "good_start": "Este un inceput bun!"
-,
-
-  "maintain_weight_goal": "Greutatea curenta este egala cu greutatea dorita! Seteaza ca obiectiv sa-ti mentii greutatea si sa-ti sculptezi corpul!"
-,
-
-  "luni_": "Luni"
-,
-
-  "marti_": "Marti",
-  "miercuri_": "Miercuri",
-  "joi_": "Joi"
-,
-
-  "vineri_": "Vineri"
-,
-
-  "sambata_": "Sambata"
-,
-
-  "duminica_": "Duminica",
-  "enter_your_notes_below": "introduceti notitele:",
-  "note_write_down": "*Nota! Studiile au demonstrat ca persoanele care isi noteaza seriile si greutatile folosite pe parcursul antrenamentelor isi ating mai usor obiectivele."
-,
-
-  "swipe_text_message": "In continuare ai cateva exemple de mancaruri cu cantitati exacte calculate pentru obiectivul tau."
-,
-
-  "antrenamente_zero": ", ar trebui sa incluzi macar 2 antrenamente pe saptamana pentru a-ti atinge obiectivul mai repede."
-,
-
-  "proteintxt": "Proteine",
-  "carbstxt": "Carbo",
-  "fatstxt": "Grasimi"
-,
-
-  "please_choose_measurement_system": "Alegeti sistemul de masura:"
-,
-
-  "prompt_password": "Parola"
-,
-
-  "please_choose_login_method": "Alege metoda de logare:",
-  "error_field_required": "Acest camp este necesar",
-  "error_incorrect_password": "Aceasta parola este incorecta"
-,
-
-  "error_invalid_email": "Aceasta adresa de email este invalida"
-,
-
-  "error_invalid_password": "Aceasta parola este prea scurta"
-,
-
-  "action_sign_in": "Logare sau Inregistrare",
-  "action_sign_in_short": "Logare",
-  "profile_current_goal": "Obiectivul actual:"
-,
-
-  "upload_photo": "Incarci o fotografie?"
-,
-
-  "share_": "Trimite"
-,
-
-  "enter_info_please": "Dupa ultima actualizare ImpactGym App are cateva imbunatatiri si este nevoie sa introduci din nou  cateva informatii pentru a merge mai departe. Multumesc!",
-  "changes_": "Schimbari din mers!",
-  "choose_another_photo": "Vreai sa alegi o alta poza de profil?"
-,
-
-  "bmr_": "Rata Metabolica de Baza:"
-,
-
-  "your_bmr_is": "Rata ta metabolica (BMR) este"
-,
-
-  "unlock_": "Deblocheaza",
-  "unlock_item": "Deblocheaza",
-  "bmr_starting_point": ", ea reprezinta numarul de calorii necesare pentru a mentine corpul in stare de fuctionare cand acesta se afla in starea de repaus."
-,
-
-  "new_food_unlocked": "Mancare noua deblocata!"
-,
-
-  "no_coins": "Nu ai destule monede…"
-,
-
-  "or_go_premium": "SAU\n Poti trece la versiunea premium si pentru cativa lei deblochezi toate exemplele de mancare si toate exercitiile.",
-  "unlock_for_coins_get_coins": "Deblocheaza acest exemplu de mancare pentru 10 monede.",
-  "ups_no_coins_": "Ups! Nu ai destule monede…",
-  "previous_savings": "Salvarile din trecut…",
-  "water": "Apa",
-
-  "permission_rationale": "Este nevoie de accesul contactelor pentru logarea cu emailul"
-,
-
-  "fulgi_ovaz_fiert": "Fulgi de ovaz fiert"
-,
-
-  "forgot_your_password": "Ai uitat paroloa?"
-,
-  "banana_": "Banana",
-  "banana_txt": "Bananele contin nutrienti importanti care ajuta sanatatea digestiva si mentine nivelul zaharului in sange moderat.",
-
-  "pizza_txt": "Da este o masa trisata. Pizza are foarte multe calorii si asta este motivul pentru care oamenii evita sa includa pizza in planul alimentar. Dar atat timp cat nu devine un obicei si se respecta cantitatile totul e in regula."
-,
-
-  "porridge_text": "Terci de fulgi de ovaz, seminte de chia si fructe."
-,
-
-  "friptura_cartofi_salata": "Friptura la cuptor, cartofi copti si salata."
-,
-  "friptura_la_cuptor": "Friptura la cuptor",
-  "rate": "Evalueaza",
-
-  "remind_later": "Aminteste-mi mai tarziu"
-,
-
-  "please_rate": ", te rog acorda-mi un moment si evalueaza aplicatia. \n Multumesc pentru suport!"
-,
-
-  "if_you_enjoy": "Daca iti place,"
-,
-  "no_thx": "Nu, multumesc.",
-  "chia_": "Seminte de chia",
-
-  "ex_unlock_for_coins_get_coins": "Deblocați acest exercițiu pentru 10 monede."
-,
-
-  "ex_new_ex_unlocked": "Exercitiu nou deblocat!"
-,
-
-  "fibre_": "Fibre"
-,
-  "the_graphic_below_represent_macronutrients_percentage": "Graficul de mai jos reprezinta procentajul macronutrientilor",
-  "a_few_before_after_examples": "Mai jos puteți vedea doar câteva exemple înainte si după. \n Rezultate reale obtinute după utilizarea planului alimentar și a exercițiilor prezentate în această aplicație: ",
-  "florin_33_years_old": "Florin, varsta 33 ani",
-  "levi_27_years_old": "Levi, varsta 27 ani",
-
-  "maria_25_years_old": "Maria, varsta 25 ani"
-,
-
-  "monica_37_years_old": "Monica, varsta 37 ani"
-,
-
-  "never_pay_extra": "Planul alimentar conteaza mai mult de 70% pentru succesul oricarui obiectiv care vizeaza schimbarea aspectului fizic. \n Acum, poti avea planul tau alimentar și exercițiile la îndemână, planul tau are cantități personalizate pentru obiectivul tau și multe opțiuni de alimente dar si cele mai bune exercitii. \n Și vreau să răspund la o întrebare pe care o primesc tot timpul de la utilizatorii noștri. Acest preț este un abonament? Nu, nu este un abonament, este o singură plată.\n Acum doar: "
-,
-
-  "pay_rejected_reason": "Ceva nu a mers… Asigurați-vă că acest card nu este expirat și că aveți bani suficienti în contul dvs."
-,
-
-  "clatite": "Clatite cu gem"
-,
-
-  "clatite_descr": "Sunt delicioase, dar nu sunt cea mai buna alegere deci nu face un obicei din asta"
-,
-
-  "paine_vinete": "Salata de vinete pe paine integrala"
-,
-
-  "pepene_verde": "Pepene verde"
-,
-
-  "pepene_verde_descr": "Pepenele verde este o degustare perfecta pentru pierderea in greutate are doar 30 de calorii pe 100g."
-,
-
-  "vinete": "Salata de vinete"
-,
-
-  "gg_progress": "Felicitari! Ai facut un pas important catre obiectivul tau."
-,
-  "be_your_best_version": "Fii cea mai buna versiune a ta!"
-,
-
-  "impactgym_app_will_only_get_your_profile_picture_namefacebook_without_your_permission": "Aplicația „Plan de Dietă și Antrenament” va obține doar imaginea de profil, numele și e-mailul dvs. Aplicația Plan Dietă și Antrenament nu va posta nimic pe Facebook fără permisiunea dvs."
-,
-
-  "_cartofi": "Cartofi"
-,
-
-  "_smantana": "Smântână"
-,
-
-  "asparagus": "Sparanghel"
-,
-  "banana_and_peanut_butter_shake": "Shake din banana și unt de arahide",
-  "banana_shake_descr": "Sursa excelentă de grăsimi bune i proteine",
-  "budica_chia_descr": "Gustos și cel mai bun pentru pierderea în greutate! Nu uitați, semințele de chia trebuie tinute în apă  cel puțin două ore înainte de preparare",
-  "budinca_chia": "Budinca de chia",
-
-  "ceapa": "Ceapă"
-,
-
-  "drybeans": "Fasole uscata"
-,
-
-  "fasole_batuta_descr": "Pregătire: - puneți fasolea în apă cu o seară înainte, apoi fierbeți (apa se va schimba de 3 ori) - Când este gata, dați-l prin robot până când se fac pastele - prăjiți ceapa tocată și când devine aurie , puneți deasupra fasolea - adăugați usturoiul tocat, sare, piper și amestecați împreună - puneți restul de ceapă prăjită deasupra"
-,
-  "lapte_migdale": "Lapte de migdale",
-  "lapte_sau_lapte_cocos": "Lapte sau lapte de cocos",
-
-  "mashed_beans": "Piure de fasole cu ceapă și usturoi"
-,
-
-  "penut_butter_sandwich": "Sandwich cu unt de arahide și banane"
-,
-
-  "sandwich_peanutb_banana_descr": "Consistent și gustos!"
-,
-  "somon": "Somon",
-  "somon_cu_sparanghel": "Somon cu cartofi copți și sparanghel",
-
-  "somon_descr": "Excelent pentru nutrienții săi bogati și grăsimile bune, nu uitați să fierbeți sparanghel în apă sărată până la înmuiere înainte de preparare"
-,
-
-  "spanac_proaspat": "Spanac proaspat"
-,
-
-  "supa_crema_linte": "Supa crema de linte"
-,
-  "supa_crema_spanac": "Supă cremă de spanac",
-  "supa_crema_spanac_descr": "Mod de preparare: Se toacă ceapa, usturoiul și cartoful; Puneți untul topit în tigaie și condimentați ceapa și usturoiul timp de 5–6 minute, apoi adăugați cartoful și amestecați până se înmoaie; Se toarnă laptele în tigaie și se lasă la fiert, apoi se adaugă zeama dintr-o jumătate de lămâie și apoi jumătate de spanac, se acoperă cu un capac și se lasă să se fierbe până când spanacul se înmoaie; Se adaugă întregul amestec în blender, unde se adaugă restul spanacului și se amestecă până se omogenizează; Se adaugă sare, piper, după gust.",
-
-  "supa_cremalinte_descr": "Mod de preparare: Se toacă ceapa, usturoiul și cartoful; Puneți untul topit în tigaie și condimentați ceapa și usturoiul timp de 5–6 minute, apoi adăugați cartoful și amestecați până se înmoaie; Se toarnă laptele în tigaie și se lasă la fiert, apoi se adaugă lintea deja fiartă, se acoperă cu un capac și se lasă la foc mic până se înmoaie lintea; Se adaugă întregul amestec în blender și se amestecă până se omogenizează; Se adaugă sare, piper, după gust."
-,
-
-  "unt_arahide": "Unt de arahide"
-,
-
-  "usturoi": "Usturoi"
-,
-  "linte": "Linte",
-  "ovaz_iaurt_descr": "Se amestecă toate ingredientele de seara pentru a se înmuia semințele și fulgii de ovăz",
-
-  "oleta_broccoli_nume": "Omleta cu brocoli si sos de rosii"
-,
-
-  "orez_brun": "Orez brun"
-,
-
-  "eggs_brown_rice_and_salad": "Ouă fierte cu orez brun și salată verde"
-,
-  "broccoli_": "Brocoli",
-  "values_before_cooking": "*Luați în considerare că toate valorile sunt brute, adica înainte de gătit",
-
-  "_raw": "(brut"
-,
-
-  "action_settings": "Setari"
-,
-
-  "addExtra": "Adauga ceva..."
-,
-  "add_btn": "Adauga",
-  "adeedtolist_toast": "Ingredientele au fost adăugate pe lista alimentară!",
-
-  "clear_": "Șterge lista"
-,
-
-  "eggs_": "ouă"
-,
-
-  "empty_basket": "Coșul este gol ..."
-,
-  "faina_malai": "Faina de porumb",
-  "grocery_list": "Lista de cumparaturi",
-
-  "my_grocery_list": "Lista mea de cumparaturi:"
-,
-
-  "nu_este_gatit": "(negătit)"
-,
-
-  "single_egg": "ou"
-,
-  "ulei_masline": "Ulei de masline",
-  "go_premium_text": "Devino Premium!"
-,
-
-  "terci_descr": "Fulgii de ovaz vor fi fierti in apa sau lapte inainte de a fi amestecati cu fructele si semintele de chia "
+  "package_name": "patrascuflorinapps.impactgymapp",
+  "facebook_app_id":"1337153073123067",
+  "fb_login_protocol_scheme":"fb1337153073123067",
+  "_sau": "sau",
+  "_litri": "litri",
+  "extrem_de_activa": "Extrem de activa",
+  "alege_genul" : "Alegeti genul dvs!",
+  "tips_and_curiosities" : "Ponturi & Curiozitati",
+  "_news": "Blog",
+"app_name" : "Plan Dieta si Antrenament",
+"messageText" : "Aplicatia de fata este bazata pe ecuatia lui Harris-Benedict. \n Desi ecuatia Harris-Benedict este folosita de multi ani (aproape 100 ani, mai precis, de la data la care Harris JA si Benedict FG au publicat studiul lor intitulat \"Un studiu biometric al metabsolismului bazal la om\" in 1919) de nutritionisti si medici pentru a estima rata metabolica bazala, recent au fost publicate studii care arata ca, in cazul persoanelor supraponderale, aceasta ecuatie tinde sa supraestimeze consumul energetic in repaus cu cel putin 5%. Intrucat calculatorul acesta este anticipat sa fie folosit preponderent de persoane care au exces de greutate, am decis sa folosim o alta formula, cunoscuta sub numele de ecuatia lui Mifflin, publicata in nr februarie 1990 al revistei American Journal of Clinical Nutrition, sub titlul \"O noua ecuatie predictiva pentru consumul energetic in repaus al persoanelor sanatoase\". Ecuatia Mifflin:\nPentru barbati: RMB (CER) = 5 + 10(greutatea) + 6.25 (inaltimea) - 5 (varsta) \n Pentru femei: RMB (CER) = -161 + 10 (greutatea) + 6.25 (inaltimea) - 5 (varsta) Rezultatul se masoara in kcal/zi.  \n  Pentru masurarea necesarului zilnic de calorii am folosit o formula care ia in consideratieasa-numitul factor de activitate fizica. Acest factor este de fapt un numar obtinut pe baza nivelului de activitate fizica pe care il selectatezi. \n  Prin multiplicarea ratei metabolice bazale cu factorul de activitate se obtine necesarul caloric zilnic.\n",
+"swipeCheckBoxTxt" : "Nu mai arata",
+"calculeaza" : "  Calculeaza  ",
+"antrenamente_saptamanale" : "Antrenamente saptamanale?",
+"cat_de_activa_este_viata_dvs" : "Cat de activa este viata dvs?",
+"foarte_activa" : "foarte activa",
+"destul_de_activa" : "destul de activa",
+"nu_prea_activa" : "nu prea activa",
+"inapoi" : " Inapoi ",
+"total" : "Total:",
+"mic_dejun" : "Mic Dejun:",
+"prima_gustare" : "Prima Gustare:",
+"pranz" : "Pranz:",
+"a_doua_gustare" : "A doua Gustare:",
+"cina" : "Cina:",
+"descriere" : "Descriere…",
+"kg" : "kg",
+"greutatea_pe_care_o_vreau" : "Greutatea dorita:",
+"nivelul_de_activitate" : "  Nivelul de activitate >>  ",
+"greutatea_actuala" : "Greutatea actuala:",
+"inaltime" : "Inaltime:",
+"sunt" : "Sunt",
+"femeie" : "Femeie",
+"barbat" : "Barbat",
+"am" : "Am ",
+"ani" : " ani.",
+"inaltime_si_greutate" : " Inaltime si Greutate >> ",
+"numele" : "Numele:",
+"bine_ati_venit" : "Bine ati venit",
+"despre" : " Despre >> ",
+"detalii" : "Detalii…",
+"idei" : " Idei >> ",
+"introduceti_varsta" : "Introduceti varsta dvs! Varsta trebuie sa fie mai mare decat 9!",
+"introduceti_numele" : "Introduceti numele dvs!",
+"introduceti_greutatea_inaltimea" : "Introduceti greutatea si inaltimea dvs!",
+"nav_dieta" : "Alimentatie",
+"info_your_age" : "Varsta:",
+"info_inalt" : "Inaltime",
+"info_greutatea" : "Greutatea actuala:",
+"info_greutatea_dorita" : "Greutatea tinta:",
+"info_nivelActivitate" : "Nivelul de activitate:",
+"info_antrenamente" : "Antrenamente saptamanale:",
+"info_edit_btn" : "Editeaza",
+"info_years_tail" : "ani",
+"info_saveBtnText" : "Salveaza",
+"obiectiv_text" : "sa scazi in greutate si sa te tonifiezi, pentru asta este recomandat sa te plasezi in deficit caloric adica sa mananci mai putin decat obiectivul caloric stabilit iar daca mergi la sala este bine sa faci cel putin 20 de minute de alergare la inceputul fiecarui antrenament cu greutati.",
+"nav_exercise" : "Exercitii",
+"obiectiv_title" : "Obiectivul tau este  ",
+"obiectiv_text_masa" : "sa pui masa musculara,, pentru asta este nevoie sa te antrenezi cu greutati si sa mananci mai mult decat necesarul caloric stabilit. ",
+"what_do_you_want_to_work_today" : "ce ai vrea sa lucrezi astazi?",
+"dialog_title" : "Se calculeaza cantitatile...",
+"diialog_message" : "Va rugam asteptati...",
+"strenghtTraining" : "Forta",
+"app_exit_toast" : "Apasati inapoi inca o data pentru a inchide aplicatia",
+"e_chest" : "Piept",
+"e_ChestAndBiceps" : "Piept&Biceps",
+"e_chestandtriceps" : "Piept&Triceps",
+"e_back" : "Spate",
+"e_backandbiceps" : "Spate&Biceps",
+"e_backandtriceps" : "Spate&Triceps",
+"e_legs" : "Picioare",
+"e_legsandabs" : "Picioare&Abdomen",
+"e_arms" : "Brate",
+"e_shoulders" : "Umeri",
+"e_upperbody" : "Partea superioara",
+"e_lowerbody" : "Partea inferioara",
+"e_fullbody" : "Tot corpul",
+"chiken_eggs" : "Oua de gaina",
+"whole_wheat" : "Paine integrala",
+"salata_verdeturi" : "Salata de verdeturi",
+"omleta_verdeturi" : "Omleta cu verdeturi si paine integrala",
+"oua_fierte" : "Oua de gaina fierte",
+"avocado" : "Avocado",
+"oua_avocado_oaine" : "Oua fierte cu avocado si paine integrala",
+"lapte_cereale" : "Lapte cu cereale.",
+"lapte_cereale_descriere" : "2/3 Lapte 1,5 grasime si 1/3 cereale la alegere.",
+"iaurt_2" : "Iaurt 2.5 grasime",
+"fulgi_ovaz" : "Fulgi de Ovaz",
+"seminte" : "Seminte",
+"iaurt_ovaz_seminte" : "Iaurt cu ovaz, seminte si fructe",
+"fructe_alegere" : "Fructe la alegere",
+"fructe_poate_fi" : "Poate fi mar, prune, fructe de padure, portocale, cirese, capsuni etc.",
+"cioco_neagra" : "Ciocolata neagra",
+"cioco_neagra_cacao_cantitate" : "Ciocolata neagra mai mult de 75 la suta cacao",
+"seminte_dovleac" : "Seminte de dovleac",
+"seminte_dovleac_descriere" : "Semintele de dovleac sunt bogate in proteine si sunt o sursa excelenta de grasimi bune omega 3 si omega 6.",
+"mamaliga" : "Mamaliga",
+"branza" : "Branza",
+"mamaligaBranza" : "Mamaliga cu branza",
+"cantitati_mancare" : "Cantitati:",
+"proteine_" : "Proteine",
+"carbo_" : "Carbohidrati",
+"fats_" : "Grasimi",
+"orez_" : "Orez",
+"piept_de_pui_prajit" : "Piept de pui prajit",
+"salata_" : "Salata",
+"piept_de_pui_orez_descriere" : "Orez cu piept de pui si salata",
+"cartofi_fierti" : "Cartofi fierti",
+"_friptura" : "Carne pentru friptura",
+"cartofi_fiert_pork_descriere" : "Friptura cu cartofi fierti si salata",
+"carne_pui" : "Carne de pui",
+"ciuperci" : "Ciuperci",
+"carne_pui_orez_ciuperci" : "Carne de pui cu orez, ciuperci si salata",
+"carne_vita" : "Carne de vita",
+"vita_ciuperci_avocado" : "Tocanita de vita cu ciuperci, avocado si salata",
+"green_beans" : "Fasole verde",
+"nuci_alune" : "Nuci/alune",
+"nuci_alune_description" : "Pot fi nuci, alune, arahide etc.",
+"iaurt_fructe" : "Iaurt 2% grasime, cu mici cantitati de fructe",
+"iaurt" : "Iaurt",
+"lapte_descriere" : "Lapte proaspat cu 1,5% grasime",
+"dovleac_copt" : "Dovleac copt",
+"dovleac_descrieree" : "Dovleacul la cuptor are foarte putine calorii deci este perfect pentru cei care vor sa slabeasca.",
+"paste_penne" : "Paste penne",
+"piept_pui" : "Piept de pui",
+"sos_rosii" : "Sos de rosii",
+"paste_piept_pui" : "Paste cu piept de pui",
+"carne_peste" : "Carne de peste",
+"legume_tigaie" : "Legume la tigaie",
+"peste_legume" : "Peste cu legume",
+"cartofi_copti" : "Cartofi copti",
+"pui_ciuperci_fasoleverde" : "Pui cu cartofi copti, ciuperci si fasole verde",
+"file_ton" : "File de ton",
+"branza_slaba" : "Branza slaba",
+"legume_alegerea" : "Legume la alegere",
+"crutoane_paine_integrala" : "Crutoane sau paine integrala",
+"salata_ton" : "Salata de ton",
+"legume_carne_pui_masline" : "Salata de legume cu carne de pui masline",
+"lapte" : "Lapte",
+"masline" : "Masline",
+"domnule_" : "Domnule",
+"doamna_" : "Doamna",
+"domnisoara_" : "Domnisoara",
+"antrenament_doua_zile" : ", in acest caz este recomandat de exemplu in prima zi partea superioara iar in a doua partea inferioara sau alt model de antrenament care sa cuprinda tot corpul in cele doua zile. de asemenea este recomandata o perioada de trei zile intre antrenamente pentru ca alternanta lucru/pauza sa fie echilibrata.",
+"antrnamente_setate" : "      Antrenamentele tale saptamanale sunt setate la ",
+"custom_tips" : "Sfaturi >>",
+"sets" : "Seturi:",
+"reps" : "Repetari:",
+"exercise_nr" : "Exercitiu nr.",
+"category" : "Categoria:",
+"legs" : "Picioare",
+"back" : "Spate",
+"chest" : "Piept",
+"umeri" : "Umeri",
+"abs" : "Abdomene",
+"antrenament_trei_zile" : ", in acest caz iata un exemplu de antrenament: Prima zi Piept&Triceps, a doua zi Spate&Biceps si in a treia zi Picioare&Abdomen.",
+"antrenament_patru_zile" : ", in acest caz poti incerca un antrenament ca acesta:  In prima zi Picioare, in  a doua zi Piept&Biceps, in a treia zi Spate&Triceps iar in a patra zi Umeri si Abdomene. Ar fi bine o zi de pauza intre a doua si a treia zi pentru recuperare.",
+"diet_matters" : " Nu uita alimentatia conteaza 70% iar antrenamentul 30%. Stai cu ochii pe cantarul de bucatarie si pe obiectivul tau.",
+"litri_" : " litri",
+"last_tip" : "  Si un ultim pont, la greutatea ta  ar trebui sa bei mai mult de ",
+"of_water" : " de apa in fiecare zi.",
+"buy_" : "Incearca premium",
+"purchase_our_premium_version_text" : "Deblocheaza versiunea full, ai acces la toate variantele de mancare si toate exercitiile acum cu peste 30% discount!",
+"purchase_" : "Achizitioneaza!",
+"ups_exercise_locked" : "Exercitiu blocat...",
+"food_locked" : "Mancare blocata...",
+"del_title" : "Sigur?",
+"del_question" : "Vrei sa stergi aceasta intrare?",
+"yes_" : "Da",
+"no_" : "Nu",
+"ai_nevoiede_mai_putin" : ", ai nevoie de mai putin de",
+"_calorii_zilnic" : "calorii zilnic pentru a-ti atinge obiectivul.",
+"ai_nevoiede_peste" : ", ai nevoie de peste",
+"ai_nevoiepentrua_mentine" : ", ai nevoie de",
+"pentrua_mentine_greutatea" : "calorii zilnic pentru a-ti mentine greutatea actuala.",
+"tips_curiosities" : "Ponturi&Curiozitati",
+"tc1" : "Grasimile Omega-3 sunt cruciale si majoritatea oamenilor nu obtin cantitatea necesara.",
+"tc2" : "Suplimentele alimentare nu vor putea niciodata sa inlocuiasca mancarea adevarata.",
+"tc3" : "Mancand mai multe legume verzi iti vei imbunatati starea de sanatate.",
+"tc4" : "Carbohidratii rafinati sunt nocivi pentru sanatatea ta.",
+"tc5" : "\"Dietele\" nu functioneaza - este necesara schimbarea stilului de viata!",
+"tc6" : "Ouale sunt una dintre cele mai sanatoase mancaruri pe care le poti manca.",
+"tc7" : "Adaugand doar 2 antrenamente cu greutati pe saptamana poti reduce grasimea corporala cu pana la 7%.",
+"tc8" : "Bauturile care contin zahar sunt principala cauza de ingrasare in alimentatia moderna.",
+"tc9" : "Niciodata sa nu ai incredere in afirmatiile despre sanatate de pe ambalaj.",
+"tc10" : "Studiile arata ca nucile te pot ajuta sa pierzi in greutate, de asemenea ajuta in lupta cu diabetul si bolile de inima.",
+"tc11" : "Cafeaua este bogata in antioxidanti iar studiile arata ca cei care consuma cafea traiesc mai mult si au un risc mai scazut de diabet, Parkinson, Alzheimer si multe alte afectiuni.",
+"tc12" : "S-a aratat ca faptul de a consuma mai multe proteine conduce in mod automat la o restrictie calorica si la pierderea semnificativa in greutate.",
+"tc13" : "Oamenii consuma mai multe alimente procesate ca niciodata, iar tehnologiile folosite sunt mai elaborate si pot chiar creea dependenta pentru anumite mancaruri.",
+"tc14" : "Un somn bun poate fi la fel de important ca si nutritia sau antrenamentele daca nu mai important. Somnul precar poate conduce la rezistenta la insulina, poate sa modifice secretiile hormonale precum si sa afecteze negativ performantele fizice si intelectuale.",
+"tc15" : "Cel mai bun moment pentru a bea apa este cu jumatate de ora inaintea mesei. Un studiu a aratat ca o jumatate de litru de apa cu 30 de minute inaintea fiecarei mese poate conduce la o pierdere in greutate de pana la 44%.",
+"tc16" : "Uleiul de masline extravirgin este una dintre cele mai sanatoase grasimi de pe planeta. Contine grasimi monosaturate pritenoase cu inima si are puternice efecte antioxidante.",
+"tc17" : "Antrenamentele cu greutati sunt unul dintre cele mai bune lucruri pe care le poti face pentru a-ti intari corpul si a-i imbunatatii compozitia. De asemena accelereaza metabolismul si reduce rezistenta la insulina.",
+"tc18" : "Ar trebui sa faci un efort si sa incluzi in alimentatie mai multe ierburi si mirodenii. Multe dintre ele pot avea puternice efecte pozitive asupra sanatatii.",
+"tc19" : "Singura cale de a stii exact ce mananci si cate calorii consumi este sa folosesti o aplicatie care monitorizeaza continutul caloric al alimentelor, ca aceasta aplicatie.",
+"tc20" : "60% dintre cei care se antreneaza cu greutati obtin o medie de 7 ore sau mai mult de somn pe noapte.",
+"tc21" : "Antrenamentele cu greutati ridica nivelul de dopamina, norepinephrina si serotonina, devenind astfel un antidepresiv natural.",
+"tc22" : "Antrenamentele cu greutati cresc rata metabolica. O rata metabolica crescuta inseamna ca arzi mai multe calorii atunci cand corpul tau este in repaus.",
+"tc23" : "Un avocado are de doua ori mai mult potasiu decat o banana.",
+"tc24" : "Brocoli contine de doua ori mai multa vitamina C decat o portocala si aproape la fel de mult calciu ca si laptele integral, iar calciul este mai bine absorbit!",
+"tc25" : "Semintele de dovleac sunt bogate in Zinc, care este bun pentru prostata si care intareste sistemul imunitar.",
+"tc26" : "Lamaile sunt considerate una dintre cele mai sanatoase mancaruri de pe pamant - o lamaie contine doza ta zilnica de vitamina C, curata ficatul si ajuta in procesul de slabire. Incearca sa adaugi sucul unei lamai intr-o cana cu apa calduta si bea asta in fiecare dimineata la trezire pentru a porni sistemul digestiv si a intari sistemul imunitar.",
+"tc27" : "Ciupercile sunt singura sursa naturala de provenienta non-animala pentru vitamina D.",
+"prmium_purchased_success" : "Versiunea premium achizitionata cu succes!",
+"click_on_name_bellow_for_detailas" : "Apasa pe nume pentru detalii:",
+"gain_0_25_kg_per_week" : "Castiga 0.25 kg pe saptamana",
+"gain_0_5_kg_per_week" : "Castiga 0.5 kg pe saptamana",
+"set_goal" : "Seteaza obiectivul",
+"weight_loss_healthy" : "Pentru a pierde in greutate avem doua optiuni pentru tine in limitele unui proces de  slabire sanatos, te rog sa alegi cat de repede vrei sa-ti atingi obiectivul:",
+"gain_muscle_text" : "Pentru a castiga in greutate te rog sa alegi cat de repede vrei sa-ti atingi obiectivul:",
+"kcal_day" : "kcal/zi",
+"set_your_goal_btn1" : "Seteaza obiectivul >>",
+"chose_speed" : "Alege viteza procesului!",
+"lose_0_5_kg_per_week" : "Slabeste 0.5 kg pe saptamana",
+"lose_1_kg_per_week" : "Slabeste 1 kg pe saptamana",
+"please_select_activity" : "Selectati nivelul de activitate si antrenamentele saptamanale!",
+"ambitious_target" : "Acesta este un obiectiv destul de ambitios!",
+"note_update" : "Nota! Va fi nevoie sa actualizezi greutatea din cand in cand pentru a recalcula necesarul caloric zilnic.!",
+"good_start" : "Este un inceput bun!",
+"maintain_weight_goal" : "Greutatea curenta este egala cu greutatea dorita! Seteaza ca obiectiv sa-ti mentii greutatea si sa-ti sculptezi corpul!",
+"luni_" : "Luni",
+"marti_" : "Marti",
+"miercuri_" : "Miercuri",
+"joi_" : "Joi",
+"vineri_" : "Vineri",
+"sambata_" : "Sambata",
+"duminica_" : "Duminica",
+"enter_your_notes_below" : "introduceti notitele:",
+"note_write_down" : "*Nota! Studiile au demonstrat ca persoanele care isi noteaza seriile si greutatile folosite pe parcursul antrenamentelor isi ating mai usor obiectivele.",
+"swipe_text_message" : "In continuare ai cateva exemple de mancaruri cu cantitati exacte calculate pentru obiectivul tau.",
+"antrenamente_zero" : ", ar trebui sa incluzi macar 2 antrenamente pe saptamana pentru a-ti atinge obiectivul mai repede.",
+"proteintxt" : "Proteine",
+"carbstxt" : "Carbo",
+"fatstxt" : "Grasimi",
+"please_choose_measurement_system" : "Alegeti sistemul de masura:",
+"prompt_password" : "Parola",
+"please_choose_login_method" : "Alege metoda de logare:",
+"error_field_required" : "Acest camp este necesar",
+"error_incorrect_password" : "Aceasta parola este incorecta",
+"error_invalid_email" : "Aceasta adresa de email este invalida",
+"error_invalid_password" : "Aceasta parola este prea scurta",
+"action_sign_in" : "Logare sau Inregistrare",
+"action_sign_in_short" : "Logare",
+"profile_current_goal" : "Obiectivul actual:",
+"upload_photo" : "Incarci o fotografie?",
+"share_" : "  Trimite ",
+"enter_info_please" : "Dupa ultima actualizare ImpactGym App are cateva imbunatatiri si este nevoie sa introduci din nou  cateva informatii pentru a merge mai departe. Multumesc!",
+"changes_" : "Schimbari din mers!",
+"choose_another_photo" : "Vreai sa alegi o alta poza de profil?",
+"bmr_" : "Rata Metabolica de Baza:",
+"your_bmr_is" : "Rata ta metabolica (BMR) este",
+"unlock_" : "Deblocheaza",
+"unlock_item" : "Deblocheaza",
+"bmr_starting_point" : ", ea reprezinta numarul de calorii necesare pentru a mentine corpul in stare de fuctionare cand acesta se afla in starea de repaus.",
+"new_food_unlocked" : "Mancare noua deblocata!",
+"no_coins" : "Nu ai destule monede…",
+"or_go_premium" : "SAU  \n   \n Poti trece la versiunea premium si pentru cativa lei deblochezi toate exemplele de mancare si toate exercitiile.",
+"unlock_for_coins_get_coins" : "Deblocheaza acest exemplu de mancare pentru 10 monede.",
+"ups_no_coins_" : "Ups! Nu ai destule monede… ",
+"previous_savings" : "Salvarile din trecut…",
+"water" : "Apa",
+"permission_rationale" : "Este nevoie de accesul contactelor pentru logarea cu emailul",
+"fulgi_ovaz_fiert" : "Fulgi de ovaz fiert",
+"forgot_your_password" : "Ai uitat paroloa?",
+"banana_" : "Banana",
+"banana_txt" : "Bananele contin nutrienti importanti care ajuta sanatatea digestiva si mentine nivelul zaharului in sange moderat.",
+"pizza_txt" : "Da este o masa trisata. Pizza are foarte multe calorii si asta este motivul pentru care oamenii evita sa includa pizza in planul alimentar. Dar atat timp cat nu devine un obicei si se respecta cantitatile totul e in regula.",
+"porridge_text" : "Terci de fulgi de ovaz, seminte de chia si fructe.",
+"friptura_cartofi_salata" : "Friptura la cuptor, cartofi copti si salata.",
+"friptura_la_cuptor" : "Friptura la cuptor",
+"rate" : "Evalueaza",
+"remind_later" : "Aminteste-mi mai tarziu",
+"please_rate" : ", te rog acorda-mi un moment si evalueaza aplicatia. \n Multumesc pentru suport!",
+"if_you_enjoy" : "Daca iti place,",
+"no_thx" : "Nu, multumesc.",
+"chia_" : "Seminte de chia",
+"ex_unlock_for_coins_get_coins" : "Deblocați acest exercițiu pentru 10 monede.",
+"ex_new_ex_unlocked" : "Exercitiu nou deblocat!",
+"fibre_" : "Fibre",
+"the_graphic_below_represent_macronutrients_percentage" : "Graficul de mai jos reprezinta procentajul macronutrientilor",
+"a_few_before_after_examples" : "Mai jos puteți vedea doar câteva exemple înainte si după. \n Rezultate reale obtinute după utilizarea planului alimentar și a exercițiilor prezentate în această aplicație: ",
+"florin_33_years_old" : "Florin, varsta 33 ani",
+"levi_27_years_old" : "Levi, varsta 27 ani",
+"maria_25_years_old" : "Maria, varsta 25 ani",
+"monica_37_years_old" : "Monica, varsta 37 ani",
+"never_pay_extra" : "Planul alimentar conteaza mai mult de 70% pentru succesul oricarui obiectiv care vizeaza schimbarea aspectului fizic. \n Acum, poti avea planul tau alimentar și exercițiile la îndemână, planul tau are cantități personalizate pentru obiectivul tau și multe opțiuni de alimente dar si cele mai bune exercitii. \n Și vreau să răspund la o întrebare pe care o primesc tot timpul de la utilizatorii noștri. Acest preț este un abonament? Nu, nu este un abonament, este o singură plată. \n Acum doar:",
+"pay_rejected_reason" : "Ceva nu a mers… Asigurați-vă că acest card nu este expirat și că aveți bani suficienti în contul dvs.",
+"clatite" : "Clatite cu gem",
+"clatite_descr" : "Sunt delicioase, dar nu sunt cea mai buna alegere deci nu face un obicei din asta",
+"paine_vinete" : "Salata de vinete pe paine integrala",
+"pepene_verde" : "Pepene verde",
+"pepene_verde_descr" : "Pepenele verde este o degustare perfecta pentru pierderea in greutate are doar 30 de calorii pe 100g..",
+"vinete" : "Salata de vinete",
+"gg_progress" : "Felicitari! Ai facut un pas important catre obiectivul tau.",
+"be_your_best_version" : "Fii cea mai buna versiune a ta!",
+"impactgym_app_will_only_get_your_profile_picture_namefacebook_without_your_permission" : "Aplicația „Plan de Dietă și Antrenament” va obține doar imaginea de profil, numele și e-mailul dvs. Aplicația Plan Dietă și Antrenament nu va posta nimic pe Facebook fără permisiunea dvs.",
+"_cartofi" : "Cartofi",
+"_smantana" : "Smântână",
+"asparagus" : "Sparanghel",
+"banana_and_peanut_butter_shake" : "Shake din banana și unt de arahide ",
+"banana_shake_descr" : "Sursa excelentă de grăsimi bune i proteine",
+"budica_chia_descr" : "Gustos și cel mai bun pentru pierderea în greutate! Nu uitați, semințele de chia trebuie tinute în apă  cel puțin două ore înainte de preparare",
+"budinca_chia" : "Budinca de chia",
+"ceapa" : "Ceapă",
+"drybeans" : "Fasole uscata",
+"fasole_batuta_descr" : "Pregătire: - puneți fasolea în apă cu o seară înainte, apoi fierbeți (apa se va schimba de 3 ori) - Când este gata, dați-l prin robot până când se fac pastele - prăjiți ceapa tocată și când devine aurie , puneți deasupra fasolea - adăugați usturoiul tocat, sare, piper și amestecați împreună - puneți restul de ceapă prăjită deasupra",
+"lapte_migdale" : "Lapte de migdale",
+"lapte_sau_lapte_cocos" : "Lapte sau lapte de cocos",
+"mashed_beans" : "Piure de fasole cu ceapă și usturoi",
+"penut_butter_sandwich" : "Sandwich cu unt de arahide și banane",
+"sandwich_peanutb_banana_descr" : "Consistent și gustos!",
+"somon" : "Somon",
+"somon_cu_sparanghel" : "Somon cu cartofi copți și sparanghel",
+"somon_descr" : "Excelent pentru nutrienții săi bogati și grăsimile bune, nu uitați să fierbeți sparanghel în apă sărată până la înmuiere înainte de preparare",
+"spanac_proaspat" : "Spanac proaspat",
+"supa_crema_linte" : "Supa crema de linte",
+"supa_crema_spanac" : "Supă cremă de spanac",
+"supa_crema_spanac_descr" : "Mod de preparare: Se toacă ceapa, usturoiul și cartoful; Puneți untul topit în tigaie și condimentați ceapa și usturoiul timp de 5–6 minute, apoi adăugați cartoful și amestecați până se înmoaie; Se toarnă laptele în tigaie și se lasă la fiert, apoi se adaugă zeama dintr-o jumătate de lămâie și apoi jumătate de spanac, se acoperă cu un capac și se lasă să se fierbe până când spanacul se înmoaie; Se adaugă întregul amestec în blender, unde se adaugă restul spanacului și se amestecă până se omogenizează; Se adaugă sare, piper, după gust.",
+"supa_cremalinte_descr" : "Mod de preparare: Se toacă ceapa, usturoiul și cartoful; Puneți untul topit în tigaie și condimentați ceapa și usturoiul timp de 5–6 minute, apoi adăugați cartoful și amestecați până se înmoaie; Se toarnă laptele în tigaie și se lasă la fiert, apoi se adaugă lintea deja fiartă, se acoperă cu un capac și se lasă la foc mic până se înmoaie lintea; Se adaugă întregul amestec în blender și se amestecă până se omogenizează; Se adaugă sare, piper, după gust.",
+"unt_arahide" : "Unt de arahide",
+"usturoi" : "Usturoi",
+"linte" : "Linte",
+"ovaz_iaurt_descr" : "Se amestecă toate ingredientele de seara pentru a se înmuia semințele și fulgii de ovăz",
+"oleta_broccoli_nume" : "Omleta cu brocoli si sos de rosii",
+"orez_brun" : "Orez brun",
+"eggs_brown_rice_and_salad" : "Ouă fierte cu orez brun și salată verde",
+"broccoli_" : "Brocoli",
+"values_before_cooking" : "*Luați în considerare că toate valorile sunt brute, adica înainte de gătit",
+"_raw" : "(brut}",
+"action_settings" : "Setari",
+"addExtra" : "Adauga ceva...",
+"add_btn" : "Adauga",
+"adeedtolist_toast" : "Ingredientele au fost adăugate pe lista alimentară!",
+"clear_" : "Șterge lista",
+"eggs_" : "ouă",
+"empty_basket" : "Coșul este gol ...",
+"faina_malai" : "Faina de porumb",
+"grocery_list" : "Lista de cumparaturi",
+"my_grocery_list" : "Lista mea de cumparaturi:",
+"nu_este_gatit" : "(negătit)",
+"single_egg" : "ou",
+"ulei_masline" : "Ulei de masline",
+"go_premium_text" : "Devino Premium!",
+"terci_descr" : "Fulgii de ovaz vor fi fierti in apa sau lapte inainte de a fi amestecati cu fructele si semintele de chia "
 
 }
-

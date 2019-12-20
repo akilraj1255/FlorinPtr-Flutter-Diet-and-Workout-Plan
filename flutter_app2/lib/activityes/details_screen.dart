@@ -15,7 +15,6 @@ class DetailsScreen extends StatefulWidget {
   DetailsScreenState createState() {
     return DetailsScreenState();
   }
-
 }
 
   class DetailsScreenState extends State<DetailsScreen>
@@ -47,7 +46,6 @@ class DetailsScreen extends StatefulWidget {
           padding: const EdgeInsets.only(top: 0.0),
           child: SafeArea(
               child: getTabBar(),
-
           ),
         ),
       ),
@@ -73,9 +71,10 @@ class DetailsScreen extends StatefulWidget {
 
   Widget getTabBarPages() {
     return TabBarView(controller: tabController, physics: NeverScrollableScrollPhysics(),
+
         children: <Widget>[
-      new MealPlanScreen(),
-      new ExerciseScreen(),
+       MealPlanScreen(),
+       ExerciseScreen(),
       Container(color: Colors.blue),
       Container(color: Colors.yellow)
 
